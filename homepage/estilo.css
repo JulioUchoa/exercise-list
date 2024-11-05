@@ -1,0 +1,80 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+#header {
+    color: #006400;
+    font-family:tahome;
+    text-align: center;
+    font-weight: 800;
+
+    text-align: center;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.7fr 1.1fr 1.1fr 1.1fr;
+    grid-template-rows: 0.3fr 2.2fr 1.2fr 0.3fr;
+    grid-template-areas: "nav nav nav nav"
+                         "sidebar main main main"
+                         "sidebar conteudo1 conteudo2 conteudo3"
+                         "sidebar footer footer footer";
+    grid-gap: 0.3em;
+    font-size:16px;
+    font-family:tahome;
+    text-align: center;
+    font-weight: 800;
+
+}
+
+
+#nav{
+    background-color: lightblue;
+    grid-area: nav;
+    border-radius: 0.8em;
+}
+
+#main{
+    background-color: lightgreen;
+    grid-area: main;
+    border-radius: 0.8em;
+}
+
+#sidebar{
+    background-color: lightsalmon;
+    grid-area: sidebar;
+    border-radius: 0.8em;
+}
+
+#conteudo1{
+    background-color: lightyellow;
+    grid-area: conteudo1;
+    border-radius: 0.8em;
+}
+
+#conteudo2{
+    background-color: lightpink;
+    grid-area: conteudo2;
+    border-radius: 0.8em;
+}
+#conteudo3{
+    background-color: lightblue;
+    grid-area: conteudo3;
+    border-radius: 0.8em;
+}
+
+#footer{
+    background-color: lightgray;
+    grid-area: footer;
+    border-radius: 0.8em;
+}
+
+teste{
+    background-color: lightgray;
+}
+
+div.teta{
+    text-align:left;
+}

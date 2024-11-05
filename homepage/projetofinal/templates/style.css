@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* div class=container no index.hmtl */
+.container{
+
+    /* define display : grid */
+    display: grid;
+
+    /* definindo altura do container : toda a tela*/
+    height: 100vh;
+
+
+    /* define quantas colunas e tamanho relativo de cada uma */
+    grid-template-columns: 0.7fr 1.1fr 1.1fr 1.1fr;
+
+    /* define quantas linhas */
+    grid-template-rows: 0.5fr 2fr 1.2fr 0.3fr;
+
+    /* define area de ocupação de cada 'div' */
+    grid-template-areas: " nav nav nav nav "
+                         " sidebar main main main  "
+                         " sidebar conteudo conteudo2 conteudo3 "
+                         " sidebar footer footer footer ";
+
+    /* espaçamento entre os quadrantes */
+    grid-gap: 0.5em;
+
+
+    /* font size e estilo */
+    font-size: 16px;
+    font-family: tahoma;
+    text-align: center;
+    font-weight: 800;
+
+
+}
+
+
+
+/* chama id= nav na primeira div do container */
+#nav{
+    background-color: lightblue;
+
+    /*justificar links*/
+    justify-content: space-between;
+
+    /* mostrar uma div do lado da outra*/
+    display:flex;
+
+
+    /* alinhar itens ao centro  */
+    align-items: center;
+
+
+
+    /* define div = nav ocupando 4 'areas'  */
+    grid-area: nav;
+
+    /* bordas arredondadas */
+    border-radius: 0.8em;
+}
+
+/* configura aprensetação da imgem contida na nav */
+#nav img{
+    height: 100px;
+    width: 100px;
+    margin-left: 60px;
+    padding: 10px;
+
+}
+
+
+#menu a{
+    text-decoration: None;
+    font-size: 22px;
+    margin-left: 20px;
+    padding: 15px;
+    color: green;
+    text-align: center;
+}
+
+#menu a:hover{
+
+    color: yellow;
+}
+
+
+
+/* chama id= main na primeira div do container */
+#main{
+    background-color: lightsalmon;
+
+    /* define div = main ocupando 3 areas */
+    grid-area: main;
+
+    /* bordas arredondadas */
+    border-radius: 0.8em;
+}
+
+/* chama id= sidebar na primeira div do container */
+#sidebar{
+    background-color: lightpink;
+    grid-area: sidebar;
+
+    /* bordas arredondadas */
+    border-radius: 0.8em;
+}
+
+/* chama id= conteudo na primeira div do container */
+#conteudo{
+    background-color: lightgreen;
+    grid-area: conteudo;
+
+    /* bordas arredondadas */
+    border-radius: 0.8em;
+}
+
+/* chama id= conteudo2 na primeira div do container */
+#conteudo2{
+    background-color: lightgreen;
+    grid-area: conteudo2;
+
+    /* bordas arredondadas */
+    border-radius: 0.8em;
+}
+
+/* chama id= conteudo3 na primeira div do container */
+#conteudo3{
+    background-color: lightgreen;
+    grid-area: conteudo3;
+
+    /* bordas arredondadas */
+    border-radius: 0.8em;
+}
+
+/* chama id= footer na primeira div do container */
+#footer{
+    background-color: lightgray;
+    grid-area: footer;
+
+    /* bordas arredondadas */
+    border-radius: 0.8em;
+}

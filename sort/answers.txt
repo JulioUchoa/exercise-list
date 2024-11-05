@@ -1,0 +1,14 @@
+sort1 uses: Bubble sort
+
+How do you know?: By exclusion, this is the bubble sort, cause it took less time
+to finish the execution on sorted list.
+
+sort2 uses: Merge sort
+
+How do you know?: On random itens, it took the smallest time to complete the task.
+As we have seen in the 3th class, marge algo is the more efficient one.
+
+sort3 uses: Selection sort
+
+How do you know?: It took much longer to finish the execution on sorted list. hence, we imply
+selection sort.

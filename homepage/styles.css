@@ -1,0 +1,30 @@
+body {
+    background-color: #fff;
+    color: #212529;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+}
+
+.header {
+    background-color: #228B22;
+    color: #90EE90;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.carousel {
+    width:640px;
+    height:360px;
+  }
+
+  p {
+    padding: 35px;
+  }
+
+  .carousel-inner> .item> img { 
+    margem: auto; 
+    }
